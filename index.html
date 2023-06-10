@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="login.php" method="post" autocomplete="off" novalidate>
+        <p>
+            <!-- for relates to id -->
+            <label for="user-name">Your login</label>
+            <input name="user_name" id="user-name" type="text" required value="Nemo" placeholder="Tutaj wpisz swój login" minlength="3" maxlength="30">
+        </p>
+
+        <p>
+            <label>Your login
+                <input name="user_name" type="text" required value="Nemo" placeholder="Tutaj wpisz swój login" minlength="3" maxlength="30">
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">Login</button>
+        </p>
+
+    </form>
+
+
+    <form action="action.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Field set</legend>
+            <p>
+                File description:<input name="username" type="text">
+                Choose file<input type="file" name="avatar" accept="image/png, img/jpeg">
+                <button type="submit">Save</button>
+            </p>
+        </fieldset>
+    </form>
+
+    <button>Przycisk uniwersalny</button>
+
+    <form action="">
+        <label for="redColor">RED</label>
+        <input type="radio" name="color" id="redColor" value="red" >
+        <label for="greenColor">GREEN</label>
+        <input type="radio" name="color" id="greenColor" value="green">
+        <label for="blueColor">BLUE</label>
+        <input type="radio" name="color" id="blueColor" value="blue">
+
+        <input type="submit" value="Send">
+    </form>
+
+    <form action="">
+        <label for="redColor">RED</label>
+        <input type="checkbox" name="color" id="redColor" value="red" >
+        <label for="greenColor">GREEN</label>
+        <input type="checkbox" name="color" id="greenColor" value="green">
+        <label for="blueColor">BLUE</label>
+        <input type="checkbox" name="color" id="blueColor" value="blue">
+
+        <input type="submit" value="Send">
+    </form>
+
+    <form action="">
+        <input type="date" name="date" id="date">
+        <input type="datetime-local" name="date-time" id="date-time">
+
+    </form>
+
+    <form action="">
+        <select name="color" id="color">
+            <optgroup label="main">
+                <option value="red">RED</option>
+                <option value="green">GREEN</option>
+                <option value="blue">BLUE</option>
+            </optgroup>
+            <optgroup label="extra">
+                <option value="silver">SILVER</option>
+                <option value="gold">GOLD</option>
+                <option value="black">BLACK</option>
+            </optgroup>
+        </select>
+    </form>
+
+</body>
+</html>
